@@ -6,5 +6,42 @@
    - name: Greenweez_raw_data
      tables:
        - name: raw_gz_sales1
+         description: sales of Greenweez / we have on row per product_id found in each orders_id
+         loaded_at_field: CAST( date_date AS TIMESTAMP)
+         freshness:
+           warn_after : {count: 90,period: day}
+         columns:
+           - name: date_date
+             description: date of purchase
+           - name: orders_id
+             description: primary key
+           - name: products_id
+             description: foreign key 
+           - name: revenue
+             description: value of the product
+           - name: quantity 
+             description: purchased quantity
        - name: raw_gz_product
+         description: product of Greenweez / we have on row per product_id found in each orders_id
+         columns:
+           - name: products_id
+             description: foreign key
+             tests:
+               - unique
+               - not_null 
+           - name: purchase_price
+             description: value of the product       
        - name: raw_gz_ship
+         description: ship of Greenweez / we have on row per product_id found in each orders_id
+         columns:
+           - name: orders_id
+             description: primary key
+             tests:
+               - unique
+               - not_null
+           - name: shipping_fee
+             description: cost of shipping
+           - name: logcost
+             description: logcost
+           - name: ship_cost
+             description: ship_cost
