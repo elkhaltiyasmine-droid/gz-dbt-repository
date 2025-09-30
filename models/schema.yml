@@ -45,3 +45,71 @@
              description: logcost
            - name: ship_cost
              description: ship_cost
+       - name: raw_gz_adwords
+         description: compaigns ads
+         columns:
+           - name: date_date
+             description: date_date
+           - name: paid_source
+             description: cost of shipping
+           - name: campaign_key
+             description: logcost
+           - name: camPGN_name
+             description: ship_cost
+           - name: ads_cost
+             description: ship_cost
+           - name: impression
+             description: ship_cost
+           - name: click
+             description: ship_cost
+       - name: raw_gz_bing
+         description: compaigns ads
+         columns:
+           - name: date_date
+             description: date_date
+           - name: paid_source
+             description: cost of shipping
+           - name: campaign_key
+             description: logcost
+           - name: camPGN_name
+             description: ship_cost
+           - name: ads_cost
+             description: ship_cost
+           - name: impression
+             description: ship_cost
+           - name: click
+             description: ship_cost
+       - name: raw_gz_criteo
+         description: compaigns ads
+         columns:
+           - name: date_date
+             description: date_date
+           - name: paid_source
+             description: cost of shipping
+           - name: campaign_key
+             description: logcost
+           - name: camPGN_name
+             description: ship_cost
+           - name: ads_cost
+             description: ship_cost
+           - name: impression
+             description: ship_cost
+           - name: click
+             description: ship_cost
+       - name: raw_gz_facebook
+         description: compaigns ads
+         columns:
+           - name: date_date
+             description: date_date
+           - name: paid_source
+             description: cost of shipping
+           - name: campaign_key
+             description: logcost
+           - name: camPGN_name
+             description: ship_cost
+           - name: ads_cost
+             description: ship_cost
+           - name: impression
+             description: ship_cost
+           - name: click
+             description: ship_cost
